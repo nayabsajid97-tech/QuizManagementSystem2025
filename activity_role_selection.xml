@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background_logo"
+    android:padding="24dp"
+    tools:context=".RoleSelectionActivity">
+
+    <!-- Top logo -->
+    <ImageView
+        android:id="@+id/roleLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/app_logo"
+        android:layout_marginBottom="10dp" />
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/roleAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz App"
+        android:textColor="@color/primary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Your Role"
+        android:textColor="@color/primary"
+        android:textSize="20sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Teacher Button -->
+    <Button
+        android:id="@+id/btnTeacher"
+        style="@style/CustomButtonStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Teacher"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnStudent"
+        style="@style/CustomButtonStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Student"
+        android:layout_marginBottom="40dp" />
+
+
+
+
+
+    <!-- Home Button -->
+    <ImageButton
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btnHome"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_menu_revert"
+        android:contentDescription="Go Home"
+        app:tint="@color/black" />
+
+    <!-- Footer -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by Nayyab Sajid"
+        android:textColor="@color/primary"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

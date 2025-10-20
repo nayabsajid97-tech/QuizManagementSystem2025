@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_logo"
+    android:padding="20dp">
+
+    <!-- Top Logo and App Name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/app_logo"
+            android:contentDescription="App Logo"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz App"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary" />
+    </LinearLayout>
+
+    <!-- Center Form -->
+    <LinearLayout
+        android:layout_width="371dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/numQuestions"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Number of Questions"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_gray" />
+
+        <EditText
+            android:id="@+id/subject"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Subject"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_gray" />
+
+        <EditText
+            android:id="@+id/difficulty"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Difficulty Level"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_gray" />
+
+        <!-- Generate Button -->
+        <Button
+            android:id="@+id/btnGenerate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/primary"
+            android:text="Generate"
+            android:textColor="@color/white" />
+
+        <!-- Go to Manual Quiz -->
+        <Button
+            android:id="@+id/btnManualQuiz"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary"
+            android:text="Go to Manual Quiz"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- Home Button -->
+    <!-- Home Button -->
+    <ImageButton
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btnHome"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_menu_revert"
+        app:tint="@color/primary"
+        android:contentDescription="Home" />
+
+
+    <!-- Developed By Footer -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by Nayyab Sajid"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
